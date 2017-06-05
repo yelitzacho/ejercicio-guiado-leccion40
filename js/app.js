@@ -7,15 +7,16 @@ const render = (root) => {
 	wrapper.append(Header());
 	wrapper.append(Todo());
 
-}
 	root.append(wrapper);
+	
+}
 
 const state = {
-	todos:[]
+	todos: []
 };
 
 $( _ => {
 	const root = $('.root');
-	render(root)
+	render(root);
 });
 
