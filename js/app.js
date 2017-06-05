@@ -8,7 +8,6 @@ const render = (root) => {
 	wrapper.append(Todo());
 
 	root.append(wrapper);
-	
 }
 
 const state = {

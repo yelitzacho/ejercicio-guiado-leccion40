@@ -26,6 +26,7 @@ const Todo = () => {
 			}
 		}
 	});
+
 	return parent;
 }
 
@@ -45,14 +46,14 @@ const TodoItem = (data,update) =>{
 	const todo = $('<div class="todos">');
 	const checkbox = $('<input type="checkbox">');
 	const span = $('<span>'+data.text+'</span>');
-	const remove = $('<button>Remove</button>');
+	const remove = $('<button class="btn-remove">Remove</button>');
 
 	todo.append(checkbox);
 	todo.append(span);
 	todo.append(remove);
 
 	checkbox.on('change', (e) => {
-		data.completed  = !data-completed,
+		data.completed  = !data.completed;
 		update();
 	});
 
